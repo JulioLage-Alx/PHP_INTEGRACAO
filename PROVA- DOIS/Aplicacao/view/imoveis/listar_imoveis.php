@@ -10,7 +10,7 @@ if (!$conn) {
 }
 
 // Chamar a função para listar os imóveis
-$imoveis = listarImoveis();
+$imoveis = listarImoveis($conn);
 ?>
 
 <!DOCTYPE html>
