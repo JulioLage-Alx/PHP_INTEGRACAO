@@ -10,8 +10,18 @@
 <body>
     <div class="container mt-5">
         <h2>Adicionar Imóvel</h2>
+        
+        <!-- Exibir mensagens de erro ou sucesso -->
+        <?php if (isset($msg)): ?>
+            <div class="alert alert-<?= $msg['type']; ?>" role="alert">
+                <?= $msg['message']; ?>
+            </div>
+        <?php endif; ?>
+
+        <!-- Formulário de Adição de Imóvel -->
         <form action="../../controle/imovel.php" method="POST">
             <input type="hidden" name="acao" value="criar">
+            
             <div class="mb-3">
                 <label for="endereco">Endereço:</label>
                 <input type="text" class="form-control" name="endereco" id="endereco" required>
@@ -28,6 +38,7 @@
                 <label for="nome_proprietario">Nome do Proprietário:</label>
                 <input type="text" class="form-control" name="nome_proprietario" id="nome_proprietario" required>
             </div>
+            
             <button type="submit" class="btn btn-primary">Salvar</button>
         </form>
     </div>

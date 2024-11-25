@@ -1,7 +1,18 @@
 <?php
+// Incluir a função para listar imóveis
 require_once '../../modelo/mdimovel.php';
+
+$conn = mysqli_connect('localhost', 'root', 'Julio1975$', 'Up_Estade'); 
+
+// Verificar se a conexão foi bem-sucedida
+if (!$conn) {
+    die("Conexão falhou: " . mysqli_connect_error());
+}
+
+// Chamar a função para listar os imóveis
 $imoveis = listarImoveis();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

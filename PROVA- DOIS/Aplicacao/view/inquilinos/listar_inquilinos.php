@@ -1,7 +1,18 @@
 <?php
+// Incluir a função para listar inquilinos
 require_once '../../modelo/mdinquilino.php';
+
+$conn = mysqli_connect('localhost', 'root', 'Julio1975$', 'Up_Estade'); 
+
+// Verificar se a conexão foi bem-sucedida
+if (!$conn) {
+    die("Conexão falhou: " . mysqli_connect_error());
+}
+
+// Chamar a função para listar os inquilinos
 $inquilinos = listarInquilinos();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

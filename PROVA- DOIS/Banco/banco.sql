@@ -1,3 +1,7 @@
+CREATE DATABASE Up_Estade;
+USE Up_Estade;
+
+
 CREATE TABLE imovel (
     id INT AUTO_INCREMENT PRIMARY KEY,
     endereco VARCHAR(255) NOT NULL,
@@ -5,6 +9,7 @@ CREATE TABLE imovel (
     valor_aluguel DECIMAL(10,2) NOT NULL,
     nome_proprietario VARCHAR(100) NOT NULL
 );
+
 
 CREATE TABLE inquilino (
     id INT AUTO_INCREMENT PRIMARY KEY,

@@ -16,7 +16,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Gerenciar Imóveis</h5>
                         <p class="card-text">Adicione, edite ou visualize imóveis cadastrados.</p>
-                        <a href="Aplicacao/view/imoveis/listar.php" class="btn btn-primary">Gerenciar Imóveis</a>
+                        <a href="Aplicacao/view/imoveis/listar_imoveis.php" class="btn btn-primary">Gerenciar Imóveis</a>
                     </div>
                 </div>
             </div>
@@ -25,7 +25,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Gerenciar Inquilinos</h5>
                         <p class="card-text">Adicione, edite ou visualize inquilinos cadastrados.</p>
-                        <a href="Aplicacao/view/inquilinos/listar.php" class="btn btn-primary">Gerenciar Inquilinos</a>
+                        <a href="Aplicacao/view/inquilinos/listar_inquilinos.php" class="btn btn-primary">Gerenciar Inquilinos</a>
                     </div>
                 </div>
             </div>
